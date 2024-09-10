@@ -1,6 +1,9 @@
 import { IoIosCloseCircle, IoIosCut } from 'react-icons/io';
 import heart from '../../../assets/Home/section-img.webp'
 import { FaCheckCircle, FaHeartbeat, FaTooth } from 'react-icons/fa';
+import bggImage from '../../../assets/Home/testi-bg.3ba74bdb.jpg'
+import AllDoctors from '../../../Sheard/AllDoctors/AllDoctors';
+
 
 const ReasonablePrice = () => {
     return (
@@ -156,6 +159,31 @@ const ReasonablePrice = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* background Section  */}
+            <div>
+
+                <div className="mt-16 h-full bg-cover bg-center bg-fixed"
+                    style={{ backgroundImage: `url(${bggImage})` }}
+                >
+                    <div className='h-full  bg-[#4073D1] bg-opacity-60'>
+                        <div className='max-w-screen-xl mx-auto text-center items-center
+                     pt-16 text-white
+                    '>
+                            <div className='text-center items-center mt-16'>
+                                <h1 className='lg:text-3xl font-bold md:text-2xl pb-5'>We Have Specialist Doctors To Solve Your Problems</h1>
+                                <img className='mx-auto pb-4' src={heart} alt="" />
+                                <p className='pb-10'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aut?</p>
+                            </div>
+                            <div className=' '>
+                                <AllDoctors></AllDoctors>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
