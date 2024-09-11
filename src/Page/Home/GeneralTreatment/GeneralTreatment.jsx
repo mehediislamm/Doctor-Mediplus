@@ -135,78 +135,78 @@ const GeneralTreatment = () => {
                     {/* card slider  */}
                     <div ref={sliderRef} className="keen-slider pb-24 max-w-screen-xl mx-auto">
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide1">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi1} alt="" />
-                                        <h2 className='pl-3 font-bold'>sakill hossain</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide1">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi1} alt="" />
+                                    <h2 className='pl-3 font-bold'>sakill hossain</h2>
                                 </div>
+
                             </div>
+                        </div>
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide2">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi2} alt="" />
-                                        <h2 className='pl-3 font-bold'>Taniya Rahaman</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide2">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi2} alt="" />
+                                    <h2 className='pl-3 font-bold'>Taniya Rahaman</h2>
                                 </div>
+
                             </div>
+                        </div>
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide3">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi3} alt="" />
-                                        <h2 className='pl-3 font-bold'>Eva Islam</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide3">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi3} alt="" />
+                                    <h2 className='pl-3 font-bold'>Eva Islam</h2>
                                 </div>
+
                             </div>
+                        </div>
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide4">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi1} alt="" />
-                                        <h2 className='pl-3 font-bold'>sakill hossain</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide4">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi1} alt="" />
+                                    <h2 className='pl-3 font-bold'>sakill hossain</h2>
                                 </div>
+
                             </div>
+                        </div>
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide5">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi2} alt="" />
-                                        <h2 className='pl-3 font-bold'>Taniya Rahaman</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide5">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi2} alt="" />
+                                    <h2 className='pl-3 font-bold'>Taniya Rahaman</h2>
                                 </div>
+
                             </div>
+                        </div>
                         {/* card 1 */}
-                            <div className="keen-slider__slide number-slide6">
-                                <div className='relative w-full h-44 border bg-white text-black'>
-                                    <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
-                                        officiis atque voluptates, rerum reprehenderit.</p>
-                                    <div className='flex pl-4 items-center'>
-                                        <img src={testi3} alt="" />
-                                        <h2 className='pl-3 font-bold'>Eva Islam</h2>
-                                    </div>
-
+                        <div className="keen-slider__slide number-slide6">
+                            <div className='relative w-full h-44 border bg-white text-black'>
+                                <p className='p-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ex
+                                    officiis atque voluptates, rerum reprehenderit.</p>
+                                <div className='flex pl-4 items-center'>
+                                    <img src={testi3} alt="" />
+                                    <h2 className='pl-3 font-bold'>Eva Islam</h2>
                                 </div>
+
                             </div>
-                       
+                        </div>
+
                     </div>
                 </div>
 
