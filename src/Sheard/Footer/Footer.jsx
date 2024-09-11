@@ -3,7 +3,7 @@ import { FaCaretRight, FaTelegramPlane } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className="bg-[#3A67BC] pt-14 ">
-            <footer className="max-w-screen-xl mx-auto p-10">
+            <footer className="max-w-screen-xl mx-auto  ">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     <nav className="text-white">
                         <h6 className="text-xl font-bold pb-2">About Us</h6>

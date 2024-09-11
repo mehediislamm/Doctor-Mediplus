@@ -11,7 +11,7 @@ import department from '../../../assets/Home/department.webp'
 const TreatmentCategory = () => {
     const [tabIndex, setTabIndex] = useState(0);
     return (
-        <div className='max-w-screen-lg mx-auto'>
+        <div className='max-w-screen-xl mx-auto '>
             <div className='text-center items-center mt-16'>
                 <h1 className='lg:text-3xl font-bold md:text-2xl pb-5'>We Offer Different Services To Improve Your Health</h1>
                 <img className='mx-auto pb-4' src={heart} alt="" />

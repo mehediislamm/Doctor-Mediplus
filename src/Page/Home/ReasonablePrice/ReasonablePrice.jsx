@@ -8,7 +8,7 @@ import AllDoctors from '../../../Sheard/AllDoctors/AllDoctors';
 const ReasonablePrice = () => {
     return (
         <div className="   bg-[#F9F9F9]  mb-20">
-            <div className='max-w-screen-lg mx-auto'>
+            <div className='max-w-screen-xl mx-auto'>
                 {/* common section   */}
                 <div className=' text-center items-center mt-20 pt-20 pb-10'>
                     <h1 className='lg:text-3xl font-bold md:text-2xl pb-5'>We Offer Different Services To Improve Your Health</h1>

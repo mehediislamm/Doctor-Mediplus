@@ -44,7 +44,7 @@ const RulesMaintain = () => {
                 style={{ backgroundImage: `url(${bggImage})` }}
             >
                 <div className='h-80  bg-[#4073D1] bg-opacity-60'>
-                    <div className='max-w-screen-xl mx-auto text-center items-center
+                    <div className='max-w-screen-lg mx-auto text-center items-center
                     lg:w-[550px] pt-16 text-white
                     '>
                         <h1 className='md:pb-4 text-3xl font-bold'>Do you need Emergency Medical Care? Call @ 1234 56789</h1>

@@ -50,7 +50,7 @@ const MedicalNews = () => {
                 </div>
 
 
-                <div className='w-full  max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                <div className='w-full  max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {/* card 1  */}
                     <div className='group border rounded-md'>
                         <img className='w-full' src={blog1} alt="" />
