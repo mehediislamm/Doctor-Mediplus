@@ -6,29 +6,31 @@ const Navbar = () => {
     const navOption2 = <>
 
 
-        <li><Link className="hover:text-[#4073D1]" to="/">About</Link></li>
-        <li><Link className="hover:text-[#4073D1]" to="/">Appointment</Link></li>
-        <li><Link className="hover:text-[#4073D1]" to="/">Our Pricing</Link></li>
-        <li><Link className="hover:text-[#4073D1]" to="/">Faq</Link></li>
+        <li><Link className="hover:text-white" to="/">Appointment</Link></li>
+        <li><Link className="hover:text-white" to="/">Our Pricing</Link></li>
+        <li><Link className="hover:text-white" to="/">About</Link></li>
+        <li><Link className="hover:text-white" to="/">Faq</Link></li>
 
 
     </>
 
     const navOption = <>
 
-        <li><Link className="hover:text-[#4073D1]" to="/">Home</Link></li>
-        <li><Link className="hover:text-[#4073D1]" to="/"><div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className=" hover:text-[#4073D1] btn border-none btn-xs items-center ">
-                Doctor
-                <FaAngleDown />
-            </div>
-            <ul tabIndex={0} className="dropdown-content menu  bg-base-100  z-[1] w-52 p-2  ">
+        <li><Link className="hover:text-white" to="/">Home</Link></li>
+        <li><Link className="hover:text-white" to="/"><div className="dropdown dropdown-hover">
+            <Link to="/doctor">
+                <div tabIndex={0} role="button" className=" hover:text-white btn border-none btn-xs items-center ">
+                    Doctor
+                    <FaAngleDown />
+                </div>
+            </Link>
+            <ul tabIndex={0} className="dropdown-content menu  bg-[#4073D1]  z-[1] w-52 p-2  ">
                 {navOption2}
             </ul>
         </div>
         </Link></li>
-        <li className="hover:text-[#4073D1] lg:pt-0 pt-36"><Link to="/">Services</Link></li>
-        <li><Link className="hover:text-[#4073D1]" to="/">Contac t Us</Link></li>
+        <li className="hover:text-white lg:pt-0 pt-36"><Link to="/services">Services</Link></li>
+        <li><Link className="hover:text-white" to="/contact">Contact Us</Link></li>
 
     </>
 
@@ -57,7 +59,7 @@ const Navbar = () => {
                                     </div>
                                     <ul
                                         tabIndex={0}
-                                        className="menu h-96 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow">
+                                        className="menu h-96 menu-sm dropdown-content bg-[#4073D1] rounded-box z-[1] mt-3 w-64 p-2 shadow">
                                         {navOption}
                                     </ul>
                                 </div>

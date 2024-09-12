@@ -1,4 +1,4 @@
-import Banner from "../Banner/Banner";
+ import Banner from "../Banner/Banner";
 import EmargencyHelp from "../EmargencyHelp/EmargencyHelp";
 import GeneralTreatment from "../GeneralTreatment/GeneralTreatment";
 import MedicalNews from "../MedicalNews/MedicalNews";
@@ -19,6 +19,7 @@ const Home = () => {
             <TreatmentCategory></TreatmentCategory>
             <ReasonablePrice></ReasonablePrice>
             <MedicalNews></MedicalNews>
+            
         </div>
     );
 };
