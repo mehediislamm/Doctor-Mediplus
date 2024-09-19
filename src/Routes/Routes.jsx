@@ -4,6 +4,7 @@ import Home from "../Page/Home/Home/Home";
 import Doctor from "../Page/Doctor/Doctor";
 import Services from "../Page/Services/Services";
 import ContactUs from "../Page/ContactUs/ContactUs";
+import TreatmentCategory from "../Page/Home/TreatmentCategory/TreatmentCategory";
 
  
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
         {
             path:"doctor",
             element:<Doctor></Doctor>
+        },
+        {
+            path:"treatmentcategory/:category",
+            element:<TreatmentCategory></TreatmentCategory>
         },
         {
             path:"services",
