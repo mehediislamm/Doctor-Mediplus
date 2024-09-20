@@ -3,13 +3,16 @@ import heartt from '../../../assets/Home/section-img.webp'
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import "./TabsComponent.css";
-import { FaBone, FaCheckCircle, FaHeartbeat, FaLocationArrow, FaTooth } from 'react-icons/fa';
+import { FaBone,  FaHeartbeat,  FaTooth } from 'react-icons/fa';
 import { LiaBrainSolid } from 'react-icons/lia';
-import department from '../../../assets/Home/department.webp'
+
 import { useParams } from 'react-router-dom';
-import { Player } from '@lottiefiles/react-lottie-player';
-import lottefiels from '../../../../public/Animation - 1726751382414.json'
-import { FaMapLocation } from 'react-icons/fa6';
+
+import HeartTabInfo from '../../TabInfo/HeartTabInfo/HeartTabInfo';
+import NeurologyTabInfo from '../../TabInfo/NeurologyTabInfo/NeurologyTabInfo';
+import TeethTabInfo from '../../TabInfo/TeethTabInfo/TeethTabInfo';
+import Gastroenterology from '../../TabInfo/Gastroenterology/Gastroenterology';
+import OrthopedagogyTabInfo from '../../TabInfo/OrthopedagogyTabInfo/OrthopedagogyTabInfo';
 
 
 const TreatmentCategory = () => {
@@ -29,12 +32,12 @@ const TreatmentCategory = () => {
     // console.log(Alldata);
 
     const Heart = Alldata?.slice(0, 1).filter(data => data?.category === 'heart');
-    const Teeth = Alldata?.slice(0, 1).filter(data => data?.category === 'dentist');
+    const Neurology = Alldata?.slice(0, 6).filter(data => data?.category === 'neurology');
+    const Teeth = Alldata?.slice(0, 2).filter(data => data?.category === 'dentist');
+    const Gastroenterologyy = Alldata?.slice(0, 7).filter(data => data?.category === 'gastroenterology');
+    const Orthopedagogy = Alldata?.slice(0, 8).filter(data => data?.category === 'orthopendagogy');
     const Ear = Alldata?.slice(0, 1).filter(data => data?.category === 'ear');
     const Eye = Alldata?.slice(0, 1).filter(data => data?.category === 'eye');
-    const Gastroenterology = Alldata?.slice(0, 1).filter(data => data?.category === 'gastroenterology');
-    const Neurology = Alldata?.slice(0, 1).filter(data => data?.category === 'neurology');
-    const Orthopedagogy = Alldata?.slice(0, 1).filter(data => data?.category === 'orthopedagogy');
     // console.log(Heart);
 
     return (
@@ -105,151 +108,19 @@ const TreatmentCategory = () => {
                         <div className=' '>
 
                             <TabPanel className="tab-panel mt-10 ">
-                                {
-                                    Heart?.map(HeartData => <div key={HeartData._id}>
-                                        <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6'>
-                                            <div>
-                                                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
-                                                    <div>
-                                                        <h2 className='text-xl font-bold'>{HeartData?.Heart}</h2>
-                                                        <p className='w-10 h-1 bg-black'></p>
-
-                                                        <p className='pt-5'>Experience: <span className='text-[#4073D1]'>{HeartData?.Heart_exprience}</span></p>
-                                                        <p className='pt-5'>  <span className='text-[#4073D1] flex items-center gap-2'>
-                                                            <FaLocationArrow className='text-xl'></FaLocationArrow>
-                                                            {HeartData?.Heart_location}
-                                                        </span></p>
-                                                    </div>
-
-                                                    <div className='flex justify-center items-center'>
-                                                        <Player
-                                                            className='w-48 my-4'
-                                                            autoplay
-                                                            loop
-                                                            src={lottefiels}
-                                                        />
-                                                    </div>
-                                                </div>
-
-
-
-                                                <p className='pb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus.
-                                                    In quis nisi non quam pharetra commodo.</p>
-                                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                                    <FaCheckCircle />
-                                                    <p>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id.</p>
-                                                </div>
-                                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                                    <FaCheckCircle />
-                                                    <p>Maecenas pharetra ante vel est lobortis.</p>
-                                                </div>
-                                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                                    <FaCheckCircle />
-                                                    <p>Lorem ipsum dolor sit amet, consectetur..</p>
-                                                </div>
-
-                                                <div>
-                                                    <button className=" mt-10 relative h-12 w-32 p-1 origin-top transform rounded-md 
-                                                  border-white bg-[#4073D1] text-white before:absolute before:top-0 
-                                                    before:block before:h-0 before:w-full before:duration-500 hover:text-white 
-                                                     hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full 
-                                                     hover:before:bg-black">
-                                                        Doctor details
-                                                    </button>
-                                                </div>
-
-                                            </div>
-
-
-                                            {/* image section  */}
-                                            <div className=' '>
-
-                                                <img className='w-full rounded-md' src={HeartData?.Heart_doctor_image} alt="" />
-                                            </div>
-
-                                        </div>
-                                    </div>)
-                                }
+                                <HeartTabInfo Heart={Heart}></HeartTabInfo>
                             </TabPanel>
                             <TabPanel>
-                                <h2 className='text-xl font-bold'>Neurology</h2>
-                                <p className='w-10 h-1 bg-black'></p>
-                                <p className='pt-6 pb-6 text-[#4073D1]'>“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet
-                                    et nisl nec eleifend adipiscing elit.”</p>
-                                <p className='pb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus.
-                                    In quis nisi non quam pharetra commodo.</p>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas pharetra ante vel est lobortis.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Lorem ipsum dolor sit amet, consectetur..</p>
-                                </div>
+                                <NeurologyTabInfo Neurology={Neurology}></NeurologyTabInfo>
                             </TabPanel>
                             <TabPanel>
-                                <h2 className='text-xl font-bold'>Dentistry</h2>
-                                <p className='w-10 h-1 bg-black'></p>
-                                <p className='pt-6 pb-6 text-[#4073D1]'>“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet
-                                    et nisl nec eleifend adipiscing elit.”</p>
-                                <p className='pb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus.
-                                    In quis nisi non quam pharetra commodo.</p>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas pharetra ante vel est lobortis.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Lorem ipsum dolor sit amet, consectetur..</p>
-                                </div>
+                                <TeethTabInfo Teeth={Teeth} ></TeethTabInfo>
                             </TabPanel>
                             <TabPanel>
-                                <h2 className='text-xl font-bold'>Gastroenterology</h2>
-                                <p className='w-10 h-1 bg-black'></p>
-                                <p className='pt-6 pb-6 text-[#4073D1]'>“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet
-                                    et nisl nec eleifend adipiscing elit.”</p>
-                                <p className='pb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus.
-                                    In quis nisi non quam pharetra commodo.</p>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas pharetra ante vel est lobortis.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Lorem ipsum dolor sit amet, consectetur..</p>
-                                </div>
+                                <Gastroenterology Gastroenterologyy={Gastroenterologyy}></Gastroenterology>
                             </TabPanel>
                             <TabPanel>
-                                <h2 className='text-xl font-bold'>Orthopedagogy</h2>
-                                <p className='w-10 h-1 bg-black'></p>
-                                <p className='pt-6 pb-6 text-[#4073D1]'>“Vivamus ut tellus sed tellus finibus egestas. Mauris adipiscing aliquet
-                                    et nisl nec eleifend adipiscing elit.”</p>
-                                <p className='pb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra ante vel est lobortis, a commodo magna rhoncus.
-                                    In quis nisi non quam pharetra commodo.</p>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas vitae luctus nibh. Curabitur pharetra luctus est, sit amet aliquam ex posuere id.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Maecenas pharetra ante vel est lobortis.</p>
-                                </div>
-                                <div className='flex items-center gap-2 text-[#4073D1]'>
-                                    <FaCheckCircle />
-                                    <p>Lorem ipsum dolor sit amet, consectetur..</p>
-                                </div>
+                                <OrthopedagogyTabInfo Orthopedagogy={Orthopedagogy}></OrthopedagogyTabInfo>
                             </TabPanel>
                         </div>
 

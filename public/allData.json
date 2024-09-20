@@ -16,6 +16,7 @@
         "Heart_graduate": "University of Texas"
     },
     {
+        "_id": "642c155b2c4774f05c36eea8",
         "Teeth_doctor_name": "Dr. Emma Stone",
         "Teeth": "Dentist",
         "category": "dentist",
@@ -31,6 +32,7 @@
         "Teeth_graduate": "UCLA School of Dentistry"
     },
     {
+        "_id": "642c155b2c4774f05c36eea7",
         "Ear_doctor_name": "Dr. Michael Anderson",
         "Ear": "Ear",
         "category": "ear",
@@ -46,6 +48,7 @@
         "Ear_graduate": "University of Washington School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea6",
         "Eye_doctor_name": "Dr. Emily Johnson",
         "Eye": "Eye",
         "category": "eye",
@@ -61,6 +64,7 @@
         "Eye_graduate": "Stanford University School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea5",
         "Kidney_doctor_name": "Dr. Michael Carter",
         "Kidney": "Kidney",
         "category": "kidney",
@@ -76,6 +80,7 @@
         "Kidney_graduate": "UCLA School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea4",
         "Neurology_doctor_name": "Dr. Thomas Wilson",
         "Neurology": "Neurology",
         "category": "neurology",
@@ -91,12 +96,13 @@
         "Neurology_graduate": "Harvard Medical School"
     },
     {
+        "_id": "642c155b2c4774f05c36eea3",
         "Gastroenterology_doctor_name": "Dr. Michael Turner",
         "category": "gastroenterology",
         "Gastroenterology": "Gastroenterology",
         "Gastroenterology_exprience": "16 years",
         "Gastroenterology_location": "Los Angeles, USA",
-        "Gastroenterology_doctor_image": "https://ibb.co.com/Xhttps://i.ibb.co.com/GnwqfBb/ai-generated-8578391-1280.pngsG4wjm",
+        "Gastroenterology_doctor_image": "https://i.ibb.co.com/Z1KPgPk/Dr-Vijay-Anand-V-Gastroenterology.jpg",
         "Gastroenterology_cover_image": "https://i.ibb.co.com/HFBtzhL/istockphoto-2166536417-2048x2048.jpg",
         "Gastroenterology_review": "4.7",
         "Gastroenterology_price": "$250",
@@ -106,6 +112,7 @@
         "Gastroenterology_graduate": "UCLA School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea2",
         "Orthopedagogy_doctor_name": "Dr. Andrew Clark",
         "Orthopedagogy": "Orthopedagogy",
         "category": "orthopendagogy",
@@ -137,6 +144,7 @@
         "Heart_graduate": "Johns Hopkins University"
     },
     {
+        "_id": "642c155b2c4774f05c36eea1",
         "Teeth_doctor_name": "Dr. Olivia Davis",
         "Teeth": "Dentist",
         "category": "dentist",
@@ -152,6 +160,7 @@
         "Teeth_graduate": "University of Illinois at Chicago"
     },
     {
+        "_id": "642c155b2c4774f05c36eea0",
         "Ear_doctor_name": "Dr. Jessica Taylor",
         "Ear": "Ear",
         "category": "ear",
@@ -167,6 +176,7 @@
         "Ear_graduate": "University of Colorado School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea99",
         "Eye_doctor_name": "Dr. Olivia Parker",
         "Eye": "Eye",
         "category": "eye",
@@ -182,6 +192,7 @@
         "Eye_graduate": "Northwestern University Feinberg School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea98",
         "Kidney_doctor_name": "Dr. Linda Taylor",
         "Kidney": "Kidney",
         "category": "kidney",
@@ -197,6 +208,7 @@
         "Kidney_graduate": "Columbia University College of Physicians and Surgeons"
     },
     {
+        "_id": "642c155b2c4774f05c36eea97",
         "Neurology_doctor_name": "Dr. Emily Johnson",
         "Neurology": "Neurology",
         "category": "neurology",
@@ -212,6 +224,7 @@
         "Neurology_graduate": "Stanford University School of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea96",
         "Gastroenterology_doctor_name": "Dr. Jessica Lee",
         "Gastroenterology": "Gastroenterology",
         "category": "gastroenterology",
@@ -227,6 +240,7 @@
         "Gastroenterology_graduate": "Baylor College of Medicine"
     },
     {
+        "_id": "642c155b2c4774f05c36eea95",
         "Orthopedagogy_doctor_name": "Dr. Emily Johnson",
         "category": "orthopendagogy",
         "Orthopedagogy": "Orthopedagogy",
