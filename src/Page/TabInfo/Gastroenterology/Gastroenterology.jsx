@@ -2,6 +2,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { FaCheckCircle, FaLocationArrow } from "react-icons/fa";
 import lottefiles from '../../../../public/Animation - 1726853617416.json'
+import { Link } from "react-router-dom";
 
 const Gastroenterology = ({ Gastroenterologyy }) => {
     console.log(Gastroenterologyy);
@@ -51,13 +52,16 @@ const Gastroenterology = ({ Gastroenterologyy }) => {
                             </div>
 
                             <div>
-                                <button className=" mt-10 relative h-12 w-32 p-1 origin-top transform rounded-md 
+                                <Link to="/allGastroDoctor">
+                                 <button className=" mt-10 relative h-12 w-32 p-1 origin-top transform rounded-md 
                                                   border-white bg-[#4073D1] text-white before:absolute before:top-0 
                                                     before:block before:h-0 before:w-full before:duration-500 hover:text-white 
                                                      hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full 
                                                      hover:before:bg-black">
                                     Doctor details
                                 </button>
+                                </Link>
+                               
                             </div>
 
                         </div>
