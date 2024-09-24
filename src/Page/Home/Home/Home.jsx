@@ -9,6 +9,8 @@ import TreatmentCategory from "../TreatmentCategory/TreatmentCategory";
 
  
 const Home = () => {
+    console.log("hello");
+    
     return (
         <div>
             <Banner></Banner>

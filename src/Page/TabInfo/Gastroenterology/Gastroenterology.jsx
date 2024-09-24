@@ -70,7 +70,7 @@ const Gastroenterology = ({ Gastroenterologyy }) => {
                         {/* image section  */}
                         <div className=' '>
 
-                            <img className='w-full rounded-md ' src={GastroenterologyyData?.Gastroenterology_doctor_image} alt="" />
+                            <img className='w-full rounded-md h-[450px] bg-cover' src={GastroenterologyyData?.Gastroenterology_doctor_image} alt="" />
                         </div>
 
                     </div>

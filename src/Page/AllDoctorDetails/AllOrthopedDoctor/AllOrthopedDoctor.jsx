@@ -54,7 +54,7 @@ const AllOrthopedDoctor = () => {
                                 </div>
 
                                 <div>
-                                    <Link to={`/allOrhtoDocDetails/${AllOrthoData?.Orthopedagogy_doctor_name}`}>
+                                    <Link to={`/allOrhtoDocDetails/${AllOrthoData?.category}/${AllOrthoData?.Orthopedagogy_doctor_name}`}>
                                         <button className="relative h-10 w-full p-1 origin-top transform rounded-sm 
                             border-white bg-[#4073D1] text-white before:absolute before:top-0 
                            before:block before:h-0 before:w-full before:duration-500 hover:text-white 

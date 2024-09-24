@@ -14,7 +14,7 @@ const ContactUs = () => {
 
             <div className="mt-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7 max-w-screen-xl mx-auto">
                 <div>
-                    <Maps></Maps>
+                    {/* <Maps></Maps> */}
                 </div>
                 <div>
                     <div>

@@ -19,7 +19,7 @@ const AllDentistDoctor = () => {
             <div className=" mb-20 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     Dentist?.map(AllDentistData =>
-                        <div key={AllDentistData._id} className='  border mt-16 p-5  bg-[#FFFFFF]'>
+                        <div key={AllDentistData.Teeth_doctor_name} className='  border mt-16 p-5  bg-[#FFFFFF]'>
                             <div className='text-center items-center flex justify-center '>
                                 <img className="h-[400px] bg-cover" src={AllDentistData?.Teeth_doctor_image} alt="" />
                             </div>
@@ -54,7 +54,7 @@ const AllDentistDoctor = () => {
                                 </div>
 
                                 <div>
-                                    <Link to={`/allDentistDocDetails/${AllDentistData.Teeth_doctor_name}`}>
+                                    <Link to={`/allDentistDocDetails/${AllDentistData?.category}/${AllDentistData.Teeth_doctor_name}`}>
                                         <button className="relative h-10 w-full p-1 origin-top transform rounded-sm 
                             border-white bg-[#4073D1] text-white before:absolute before:top-0 
                            before:block before:h-0 before:w-full before:duration-500 hover:text-white 

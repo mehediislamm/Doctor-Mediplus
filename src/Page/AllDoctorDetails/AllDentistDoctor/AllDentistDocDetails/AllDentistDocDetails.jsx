@@ -9,7 +9,7 @@ import lottefiels from '../../../../../public/Animation - 1726853393543.json'
 
 const AllDentistDocDetails = () => {
     const [DentistData, setDentistData] = useState([]);
-    const { category, Teeth_doctor_name } = useParams();
+    const { Teeth_doctor_name } = useParams();
 
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const AllDentistDocDetails = () => {
     return (
         <div>
             {
-                Dentist?.map(OneDate => <div key={OneDate._id}>
+                Dentist?.map(OneDate => <div key={OneDate.Teeth_doctor_name}>
 
                     <div className="max-w-screen-xl mx-auto">
                         <div className="   relative flex justify-center items-center w-full">

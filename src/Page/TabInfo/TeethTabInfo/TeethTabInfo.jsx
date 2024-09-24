@@ -69,7 +69,7 @@ const TeethTabInfo = ({ Teeth }) => {
                         {/* image section  */}
                         <div className=' '>
 
-                            <img className='w-full rounded-md' src={TeethData?.Teeth_doctor_image} alt="" />
+                            <img className='w-full rounded-md h-[450px] bg-cover' src={TeethData?.Teeth_doctor_image} alt="" />
                         </div>
 
                     </div>

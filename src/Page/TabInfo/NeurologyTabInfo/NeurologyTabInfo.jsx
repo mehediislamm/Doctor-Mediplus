@@ -72,7 +72,7 @@ const NeurologyTabInfo = ({ Neurology }) => {
                         {/* image section  */}
                         <div className=' '>
 
-                            <img className='w-full rounded-md' src={NeurologyData?.Neurology_doctor_image} alt="" />
+                            <img className='w-full rounded-md h-[450px] bg-cover' src={NeurologyData?.Neurology_doctor_image} alt="" />
                         </div>
 
                     </div>

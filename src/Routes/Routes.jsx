@@ -13,6 +13,9 @@ import AllDentistDoctor from "../Page/AllDoctorDetails/AllDentistDoctor/AllDenti
 import AllDentistDocDetails from "../Page/AllDoctorDetails/AllDentistDoctor/AllDentistDocDetails/AllDentistDocDetails";
 import AllGastroDoctor from "../Page/AllDoctorDetails/AllGastroDoctor/AllGastroDoctor";
 import AllOrthopedDoctor from "../Page/AllDoctorDetails/AllOrthopedDoctor/AllOrthopedDoctor";
+import AllGastroDocDetails from "../Page/AllDoctorDetails/AllGastroDoctor/AllGastroDocDetails/AllGastroDocDetails";
+import AllOrthoDocDetails from "../Page/AllDoctorDetails/AllOrthopedDoctor/AllOrthoDocDetails/AllOrthoDocDetails";
+import AllDoctorList from "../Page/AllDoctorList/AllDoctorList";
 
  
 export const router = createBrowserRouter([
@@ -61,7 +64,7 @@ export const router = createBrowserRouter([
             element:<AllDentistDoctor></AllDentistDoctor>
         },
         {
-            path:"allDentistDocDetails/:Teeth_doctor_name",
+            path:"allDentistDocDetails/:category/:Teeth_doctor_name",
             element:<AllDentistDocDetails></AllDentistDocDetails>
         },
         {
@@ -69,16 +72,20 @@ export const router = createBrowserRouter([
             element:<AllGastroDoctor></AllGastroDoctor>
         },
         {
-            path:"allGastroDocDetails/:Gastroenterology_doctor_name",
-            element:<AllDentistDocDetails></AllDentistDocDetails>
+            path:"allGastroDocDetails/:category/:Gastroenterology_doctor_name",
+            element:<AllGastroDocDetails></AllGastroDocDetails>
         },
         {
             path:"allOrthopedDoctor",
             element:<AllOrthopedDoctor></AllOrthopedDoctor>
         },
         {
-            path:"allOrhtoDocDetails/:Orthopedagogy_doctor_name",
-            element:<AllDentistDocDetails></AllDentistDocDetails>
+            path:"allOrhtoDocDetails/:category/:Orthopedagogy_doctor_name",
+            element: <AllOrthoDocDetails></AllOrthoDocDetails>
+        },
+        {
+            path:"allDoctorList",
+            element:<AllDoctorList></AllDoctorList>
         },
       ]
     },

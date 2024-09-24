@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 
 
 const AllGastroDoctor = () => {
-    const [GastroData, setGastroData] = useState();
-    // console.log(GastroData);
+    const [GastroData, setGastroData] = useState([]);
+
     useEffect(() => {
         fetch('/allData.json')
             .then(res => res.json())
             .then(data => setGastroData(data))
     }, [])
     const Gastro = GastroData?.filter(data => data?.category === 'gastroenterology');
+   
     return (
         <div className=" mb-20 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {
@@ -53,7 +54,7 @@ const AllGastroDoctor = () => {
                             </div>
 
                             <div>
-                                <Link to={`/allGastroDocDetails/${AllGastroData.Gastroenterology_doctor_name}`}>
+                                <Link to={`/allGastroDocDetails/${AllGastroData?.category}/${AllGastroData?.Gastroenterology_doctor_name}`}>
                                     <button className="relative h-10 w-full p-1 origin-top transform rounded-sm 
                             border-white bg-[#4073D1] text-white before:absolute before:top-0 
                            before:block before:h-0 before:w-full before:duration-500 hover:text-white 

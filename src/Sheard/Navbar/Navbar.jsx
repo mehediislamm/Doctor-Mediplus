@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <li><Link className="hover:text-white" to="/">Home</Link></li>
         <li><Link className="hover:text-white" to="/"><div className="dropdown dropdown-hover">
-            <Link to="/doctor">
+            <Link to="/allDoctorList">
                 <div tabIndex={0} role="button" className=" hover:text-white btn border-none btn-xs items-center ">
                     Doctor
                     <FaAngleDown />

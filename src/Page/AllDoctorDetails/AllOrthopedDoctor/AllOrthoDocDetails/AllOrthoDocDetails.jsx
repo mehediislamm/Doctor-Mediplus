@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const AllOrthoDocDetails = () => {
     const [OrthoData, setOrthoData] = useState([]);
-    const { category, Orthopedagogy_doctor_name } = useParams();
+    const {Orthopedagogy_doctor_name } = useParams();
 
 
     useEffect(() => {
@@ -18,6 +18,7 @@ const AllOrthoDocDetails = () => {
     }, [])
 
     const Ortho = OrthoData.filter(data => data.Orthopedagogy_doctor_name === Orthopedagogy_doctor_name);
+    
     return (
         <div>
             <div>
@@ -53,12 +54,12 @@ const AllOrthoDocDetails = () => {
                             </div>
                             <div className="  p-5">
                                 <div className='flex justify-center items-center'>
-                                    <Player
+                                    {/* <Player
                                         className='md:w-32 lg:w-48 my-4'
                                         autoplay
                                         loop
                                         src={lottefiels}
-                                    />
+                                    /> */}
                                 </div>
                                 <h1 className="text-xl font-bold">Intro</h1>
                                 <div className='flex items-center pt-3 pb-5'>
