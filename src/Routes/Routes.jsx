@@ -16,6 +16,8 @@ import AllOrthopedDoctor from "../Page/AllDoctorDetails/AllOrthopedDoctor/AllOrt
 import AllGastroDocDetails from "../Page/AllDoctorDetails/AllGastroDoctor/AllGastroDocDetails/AllGastroDocDetails";
 import AllOrthoDocDetails from "../Page/AllDoctorDetails/AllOrthopedDoctor/AllOrthoDocDetails/AllOrthoDocDetails";
 import AllDoctorList from "../Page/AllDoctorList/AllDoctorList";
+import Login from "../Page/Login/Login";
+import SignUp from "../Page/SignUp/SignUp";
 
  
 export const router = createBrowserRouter([
@@ -86,6 +88,14 @@ export const router = createBrowserRouter([
         {
             path:"allDoctorList",
             element:<AllDoctorList></AllDoctorList>
+        },
+        {
+            path:"login",
+            element:<Login></Login>
+        },
+        {
+            path:"signUp",
+            element:<SignUp></SignUp>
         },
       ]
     },

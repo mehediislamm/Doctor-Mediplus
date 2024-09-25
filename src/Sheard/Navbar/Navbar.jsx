@@ -1,8 +1,11 @@
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from '../../assets/Home/logo.f130af3e.svg'
+import { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
     const navOption2 = <>
 
 
@@ -31,6 +34,8 @@ const Navbar = () => {
         </Link></li>
         <li className="hover:text-white lg:pt-0 pt-36"><Link to="/services">Services</Link></li>
         <li><Link className="hover:text-white" to="/contact">Contact Us</Link></li>
+        <li><Link className="hover:text-white" to="/login">Login</Link></li>
+
 
     </>
 
@@ -73,7 +78,24 @@ const Navbar = () => {
                                 </ul>
                             </div>
                             <div className="navbar-end">
-                                <a className="btn">Button</a>
+                                <div
+                                    onClick={() => setIsOpen(!isOpen)}
+                                    className='p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition'
+                                >
+                                    <AiOutlineMenu />
+                                    <div className='hidden md:block'>
+                                        {/* Avatar */}
+                                        <img
+                                            className='rounded-full'
+                                            referrerPolicy='no-referrer'
+                                            // src={user && user.photoURL ? user.photoURL : avaterImg}
+                                            alt='profile'
+                                            height='30'
+                                            width='30'
+                                        />
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
