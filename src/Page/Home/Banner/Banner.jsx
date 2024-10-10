@@ -8,7 +8,7 @@ const Banner = () => {
             {/* 1st div  */}
             <div className="carousel relative w-full md:relative lg:relative ">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <div className="hero bg-base-200  " style={{
+                    <div className="hero w-full bg-base-200  " style={{
                         backgroundImage: `url(${slider1})`,
                     }}>
                         <div className=" bg-cover bg-center"  >

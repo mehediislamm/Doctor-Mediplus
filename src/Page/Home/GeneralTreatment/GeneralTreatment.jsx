@@ -118,7 +118,7 @@ const GeneralTreatment = () => {
             {/* bg image section  */}
 
             <div className="mt-16 h-full bg-cover bg-center bg-fixed"
-                style={{ backgroundImage: `url(${bggImage})` }}
+                style={{ backgroundImage: `url(${bggImage})`}}
             >
                 <div className='h-full  bg-[#4073D1] bg-opacity-60'>
                     <div className='max-w-screen-xl mx-auto text-center items-center

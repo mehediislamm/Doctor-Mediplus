@@ -9,7 +9,7 @@ const AllOrthopedDoctor = () => {
     const [OrthoData, setOrthoData] = useState();
     // console.log(OrthoData);
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setOrthoData(data))
     }, [])

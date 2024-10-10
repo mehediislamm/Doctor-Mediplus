@@ -13,6 +13,7 @@ import NeurologyTabInfo from '../../TabInfo/NeurologyTabInfo/NeurologyTabInfo';
 import TeethTabInfo from '../../TabInfo/TeethTabInfo/TeethTabInfo';
 import Gastroenterology from '../../TabInfo/Gastroenterology/Gastroenterology';
 import OrthopedagogyTabInfo from '../../TabInfo/OrthopedagogyTabInfo/OrthopedagogyTabInfo';
+import { GiStomach } from 'react-icons/gi';
 
 
 const TreatmentCategory = () => {
@@ -25,20 +26,20 @@ const TreatmentCategory = () => {
 
 
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setAllData(data))
     }, []);
     // console.log(Alldata);
 
-    const Heart = Alldata?.slice(0, 1).filter(data => data?.category === 'heart');
+    const Heart = Alldata?.slice(0, 5).filter(data => data?.category === 'heart');
     const Neurology = Alldata?.slice(0, 6).filter(data => data?.category === 'neurology');
     const Teeth = Alldata?.slice(0, 2).filter(data => data?.category === 'dentist');
     const Gastroenterologyy = Alldata?.slice(0, 7).filter(data => data?.category === 'gastroenterology');
     const Orthopedagogy = Alldata?.slice(0, 8).filter(data => data?.category === 'orthopendagogy');
     const Ear = Alldata?.slice(0, 1).filter(data => data?.category === 'ear');
     const Eye = Alldata?.slice(0, 1).filter(data => data?.category === 'eye');
-    // console.log(Heart);
+    console.log(Heart);
 
     return (
         <div className='max-w-screen-xl mx-auto '>
@@ -83,7 +84,7 @@ const TreatmentCategory = () => {
                         </Tab>
                         <Tab className={tabIndex === 3 ? "custom-tab custom-tab--selected" : "custom-tab"}>
                             <div className="flex justify-center text-4xl pb-4">
-                                <FaHeartbeat className={tabIndex === 3 ? "text-[#4073D1]" : "text-[#868686]"} />
+                                <GiStomach className={tabIndex === 3 ? "text-[#4073D1]" : "text-[#868686]"} />
                             </div>
                             <div className="text-center">
                                 <h3 className={tabIndex === 3 ? "font-bold text-[#868686]" : "font-bold text-[#868686]"}>

@@ -9,7 +9,7 @@ const AllGastroDoctor = () => {
     const [GastroData, setGastroData] = useState([]);
 
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setGastroData(data))
     }, [])

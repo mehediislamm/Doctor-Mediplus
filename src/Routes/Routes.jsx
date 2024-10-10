@@ -18,6 +18,10 @@ import AllOrthoDocDetails from "../Page/AllDoctorDetails/AllOrthopedDoctor/AllOr
 import AllDoctorList from "../Page/AllDoctorList/AllDoctorList";
 import Login from "../Page/Login/Login";
 import SignUp from "../Page/SignUp/SignUp";
+import Dashboard from "../LayOut/Dashboard";
+import MyProfile from "../Page/Dashboard/MyProfile/MyProfile";
+import HeartPayment from "../Page/PaymentSuccess/HeartPayment/HeartPayment";
+import HeartPaymentFaill from "../Page/PaymentFaill/HeartPaymentFaill/HeartPaymentFaill";
 
  
 export const router = createBrowserRouter([
@@ -42,6 +46,14 @@ export const router = createBrowserRouter([
             element:<Services></Services>
         },
         {
+            path:"payment/success/:tranId",
+            element:<HeartPayment></HeartPayment>
+        },
+        {
+            path:"payment/fail/:tranId",
+            element:<HeartPaymentFaill></HeartPaymentFaill>
+        },
+        {
             path:"contact",
             element:<ContactUs></ContactUs>
         },
@@ -50,7 +62,7 @@ export const router = createBrowserRouter([
             element:<AllHeartDoctor></AllHeartDoctor>
         },
         {
-            path:"allHeartDocDetails/:category/:Heart_doctor_name",
+            path:"allHeartDocDetails/:_id/:category/:Heart_doctor_name",
             element:<AllHeartDocDetails></AllHeartDocDetails>
         },
         {
@@ -58,7 +70,7 @@ export const router = createBrowserRouter([
             element:<AllNeuroDoctor></AllNeuroDoctor>
         },
         {
-            path:"allNuroDocDetails/:Neurology_doctor_name",
+            path:"allNuroDocDetails/:_id/:Neurology_doctor_name",
             element:<AllNeuroDocDetails></AllNeuroDocDetails>
         },
         {
@@ -66,7 +78,7 @@ export const router = createBrowserRouter([
             element:<AllDentistDoctor></AllDentistDoctor>
         },
         {
-            path:"allDentistDocDetails/:category/:Teeth_doctor_name",
+            path:"allDentistDocDetails/:_id/:category/:Teeth_doctor_name",
             element:<AllDentistDocDetails></AllDentistDocDetails>
         },
         {
@@ -74,7 +86,7 @@ export const router = createBrowserRouter([
             element:<AllGastroDoctor></AllGastroDoctor>
         },
         {
-            path:"allGastroDocDetails/:category/:Gastroenterology_doctor_name",
+            path:"allGastroDocDetails/:_id/:category/:Gastroenterology_doctor_name ",
             element:<AllGastroDocDetails></AllGastroDocDetails>
         },
         {
@@ -82,7 +94,7 @@ export const router = createBrowserRouter([
             element:<AllOrthopedDoctor></AllOrthopedDoctor>
         },
         {
-            path:"allOrhtoDocDetails/:category/:Orthopedagogy_doctor_name",
+            path:"allOrhtoDocDetails/:_id/:category/:Orthopedagogy_doctor_name",
             element: <AllOrthoDocDetails></AllOrthoDocDetails>
         },
         {
@@ -99,4 +111,15 @@ export const router = createBrowserRouter([
         },
       ]
     },
+    // dashboard section  
+    {
+        path:'dashboard',
+        element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:'myProfile',
+            element:<MyProfile></MyProfile>
+          },
+        ]
+    }
   ]);

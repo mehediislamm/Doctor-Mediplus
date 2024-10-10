@@ -9,7 +9,7 @@ const AllHeartDoctor = () => {
     const [HeartData, setHeartData] = useState();
     // console.log(HeartData);
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setHeartData(data))
     }, [])
@@ -53,15 +53,16 @@ const AllHeartDoctor = () => {
                             </div>
 
                             <div>
-                                <Link to={`/allHeartDocDetails/${AllHeartData?.category}/${AllHeartData.Heart_doctor_name}`}>
+                                <Link to={`/allHeartDocDetails/${AllHeartData?._id}/${AllHeartData?.category}/${AllHeartData.Heart_doctor_name}`}>
                                     <button className="relative h-10 w-full p-1 origin-top transform rounded-sm 
-                            border-white bg-[#4073D1] text-white before:absolute before:top-0 
-                           before:block before:h-0 before:w-full before:duration-500 hover:text-white 
-                            hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full 
-                           hover:before:bg-black">
+        border-white bg-[#4073D1] text-white before:absolute before:top-0 
+        before:block before:h-0 before:w-full before:duration-500 hover:text-white 
+        hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full 
+        hover:before:bg-black">
                                         Details
                                     </button>
                                 </Link>
+
                             </div>
                         </div>
                     </div>)

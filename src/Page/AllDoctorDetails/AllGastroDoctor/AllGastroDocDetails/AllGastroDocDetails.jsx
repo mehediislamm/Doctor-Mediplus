@@ -13,7 +13,7 @@ const AllGastroDocDetails = () => {
     const { Gastroenterology_doctor_name } = useParams();
 
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => {
                 setGastroData(data)

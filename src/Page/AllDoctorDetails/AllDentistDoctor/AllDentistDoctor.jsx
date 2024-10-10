@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const AllDentistDoctor = () => {
     const [DentistData, setDentistData] = useState();
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setDentistData(data))
     }, [])

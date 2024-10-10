@@ -12,7 +12,7 @@ const AllOrthoDocDetails = () => {
 
 
     useEffect(() => {
-        fetch('/allData.json')
+        fetch('http://localhost:5000/AllData')
             .then(res => res.json())
             .then(data => setOrthoData(data))
     }, [])

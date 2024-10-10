@@ -2,8 +2,8 @@ import axios from "axios";
 
  
 const axiosPublic = axios.create({
-    baseURL:'/allData'
-    // baseURL:'http://localhost:5173'
+     
+    baseURL:'http://localhost:5000'
 })
 
 const useAxiosPublic = () => {
